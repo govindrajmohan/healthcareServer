@@ -16,10 +16,9 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 
-// 'mongodb://127.0.0.1:27017/healthcare',
-// mongodb+srv://govindmohan144:elAP92rMkF2gFbOg@clusterhealthcare.sq0vjjc.mongodb.net/healthcare
+// 'mongodb://127.0.0.1:27017/healthcare', Local
 try {
-  mongoose.connect('mongodb+srv://govindmohan144:elAP92rMkF2gFbOg@clusterhealthcare.sq0vjjc.mongodb.net/healthcare',
+  mongoose.connect('mongodb+srv://<email>:<password>@clusterhealthcare.sq0vjjc.mongodb.net/healthcare',
       {
           useUnifiedTopology: true,
           useNewUrlParser: true
